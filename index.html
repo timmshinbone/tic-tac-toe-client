@@ -12,11 +12,11 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>API Token Authentication</h1>
+      <h1>TIC TAC TOE BRO</h1>
       <h2> This is a toy application. Do not enter real passwords, or passwords you have used anywhere else!</h2>
 
       <p id="message"></p>
-      <div>
+      <div class="col-10" id="auth">
       <form id="sign-up">
         <input name="credentials[email]" placeholder="email here" type="email">
         <input name="credentials[password]" placeholder="password here" type="password">
@@ -39,16 +39,19 @@
          <button>Log Out</button>
        </form>
      </div>
-     <div id="gameboard">
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
+     <div class="row" id="gameboard">
+       <div class="col-4 box">1</div>
+       <div class="col-4 box">2</div>
+       <div class="col-4 box">3</div>
+       <div class="col-4 box">4</div>
+       <div class="col-4 box">5</div>
+       <div class="col-4 box">6</div>
+       <div class="col-4 box">7</div>
+       <div class="col-4 box">8</div>
+       <div class="col-4 box">9</div>
      </div>
+     <form id="game-action">
+
+     </form>
     </body>
 </html>
