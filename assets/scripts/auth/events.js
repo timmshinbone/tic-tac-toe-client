@@ -36,10 +36,24 @@ const onSignOut = function (event) {
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
 }
+
+const onPlayerMove = function (event) {
+  $(event.target).text('X')
+  api.onClick()
+    .then(ui.playerMoveSuccess)
+}
+const newGame = function () {
+  console.log(event)
+  api.createGame()
+    .then(ui.createGameSuccess)
+    .catch(ui.createGameFailed)
+}
 module.exports = {
   onSignup,
   onSignIn,
   onChangePassword,
-  onSignOut
+  onSignOut,
+  onPlayerMove,
+  newGame
 
 }
